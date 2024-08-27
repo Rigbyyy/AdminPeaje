@@ -9,10 +9,38 @@ package Vehiculos;
  * @author ASUS
  */
 public abstract class Vehiculo {
- private String  matricula;
- private String marca;
- private String modelo;
-private int  año;
+ protected String  matricula;
+ protected String marca;
+ protected String modelo;
+protected int  año;
+
+    public Vehiculo(String matricula, String marca, String modelo, int año) {
+        this.matricula = matricula;
+        this.marca = marca;
+        this.modelo = modelo;
+        this.año = año;
+    }
+
+    public Vehiculo() {
+    }
+
+    public String getMatricula() {
+        return matricula;
+    }
+
+    public String getMarca() {
+        return marca;
+    }
+
+    public String getModelo() {
+        return modelo;
+    }
+
+    public int getAño() {
+        return año;
+    }
+
+
 
 
 public abstract double calcularTarifa();
